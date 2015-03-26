@@ -12,7 +12,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	cout << "Welcome" << endl;
 	
-	Mat image = imread("C:\\Users\\Anushka Ekanayake\\Pictures\\image1.jpg");
+	Mat image = imread("C:\\Users\\Anushka Ekanayake\\Pictures\\image.jpg");
 	namedWindow("Display image");
 	imshow("Display image",image);
 	waitKey(0);
