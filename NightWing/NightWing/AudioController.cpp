@@ -10,7 +10,7 @@
 //reduce the background noise 
 void AudioController::noiseReguction(string audioRef,string path,string originalVideoName)
 {
-string normalizedAudioRef=
+//string normalizedAudioRef=
 
 
 }
