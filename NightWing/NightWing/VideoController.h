@@ -4,5 +4,9 @@
 *date:30/03/2015
 */
 
-//process the video file and identify highlights
-void highlightRecognition();
+class VideoController
+{
+	//process the video file and identify highlights
+	public:
+	void highlightRecognition();
+};

@@ -9,6 +9,6 @@
 
 using namespace std;
 //create the database connection
-void connectDatabse() {}
+void DatabaseConnector::connectDatabase() {}
 //close the database connection
-void closeDatabseConnection() {}
+void DatabaseConnector::closeDatabseConnection() {}

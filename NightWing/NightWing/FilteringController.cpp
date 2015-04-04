@@ -8,9 +8,9 @@
 #include "FilteringController.h"
 
 //call the relevent filter
-void callFilter(char* filter) {}
+void FilteringController::callFilter(char* filter) {}
 //load results
-void loadResults() {}
+void FilteringController::loadResults() {}
 //present the output results to UI(optional)
-void presentResults() {}
+void FilteringController::presentResults() {}
 

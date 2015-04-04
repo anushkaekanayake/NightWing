@@ -8,4 +8,5 @@
 #include "stdafx.h"
 #include "TextProcessingController.h"
 
+void TextProcessingController::processText() {}
 

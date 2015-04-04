@@ -7,8 +7,5 @@
 #include "stdafx.h"
 #include "VideoController.h"
 
-
-
-
 //process the video file and identify highlights
-void highlightRecognition(){}
+void VideoController::highlightRecognition() {}

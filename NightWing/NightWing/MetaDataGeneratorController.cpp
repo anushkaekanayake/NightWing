@@ -10,8 +10,8 @@
 
 
 //validate the voido
-bool videoValidator(char* videoRef){}
+bool MetaDataGenerator::videoValidator(char* videoRef) {}
 //generate relevent metadata
-void generateMetaData(){}
+void MetaDataGenerator::generateMetaData() {}
 
 

@@ -4,5 +4,9 @@
 *date:30/03/2015
 */
 
-//process the text on the video(score card details and etc.)
-void processText();
+class TextProcessingController
+{
+	//process the text on the video(score card details and etc.)
+	public:
+	void processText();
+};

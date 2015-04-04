@@ -7,8 +7,14 @@
 #include "stdafx.h"
 #include "AudioController.h"
 
-//convertion of the audio to text
-bool voiceToText(){}
+//reduce the background noise 
+void AudioController::noiseReguction(string audioRef,string path,string originalVideoName)
+{
+string normalizedAudioRef=
+
+
+}
 //processing of audio
-void processingAudio(){}
+void AudioController::processingAudio() {}
+
 

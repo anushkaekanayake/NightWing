@@ -48,7 +48,7 @@ bool IoController::generateAudio()
 
 
 //generate the final video file with filtered highlights
-bool IoController::gnerateVideo() {}
+bool IoController::generateVideo() {}
 
 
  bool fileExistenceChecker(string name) {

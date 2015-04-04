@@ -4,8 +4,13 @@
 *date:30/03/2015
 */
 
-//validate the voido
-bool videoValidator(char* videoRef);
-//generate relevent metadata
-void generateMetaData();
+class MetaDataGenerator
+{
+	//validate the voido
+	public:
+	bool videoValidator(char* videoRef);
+	//generate relevent metadata
 
+	public:
+	void generateMetaData();
+};

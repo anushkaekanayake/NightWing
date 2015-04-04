@@ -6,12 +6,12 @@
 
 class IoController
 {
-//extract the audio from the given video
+	//extract the audio from the given video
 	public:
-bool generateAudio();
-//generate highlight video
-public:
-bool gnerateVideo();
+	bool generateAudio();
+	//generate highlight video
+	public:
+	bool generateVideo();
 
 
 };
