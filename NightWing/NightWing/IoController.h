@@ -4,7 +4,14 @@
 *date:30/03/2015
 */
 
-//split audio and video
-bool splitVideo();
-//generate 
+class IoController
+{
+//extract the audio from the given video
+	public:
+bool generateAudio();
+//generate highlight video
+public:
 bool gnerateVideo();
+
+
+};
