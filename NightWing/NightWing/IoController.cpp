@@ -10,6 +10,7 @@
 #include "SystemProperties.h"
 #include <algorithm>
 #include "CommonUtilities.h"
+#include "AudioController.h"
 
 
 using namespace std;
@@ -24,17 +25,20 @@ void inputsFromUisimmulatorFunction();
 bool IoController::generateAudio()
 {
 	CommonUtilities commonUtilitiesObject;
+
 	string ffmpegCommand;
 	string audiofileNameStater = "audio-";
 	//getting inputs from UI simmulator****should be removed
 	inputsFromUisimmulatorFunction();
+	string path = obj.getPath();
+	string originalVideoName = obj.getOrigninalVideoName();
 
-	videoFileRef = obj.getPath() + obj.getOrigninalVideoName();
-	audioFileRef = obj.getPath() + audiofileNameStater + obj.getOrigninalVideoName() + ".mp3";
+	videoFileRef = path + originalVideoName;
+	audioFileRef = path + audiofileNameStater + originalVideoName + ".mp3";
 	//if audio file is not already exist
 	if (!commonUtilitiesObject.fileExistenceChecker(audioFileRef))
 	{
-		cout << "Executing ffmpeg command...\n";
+		cout << "Executing ffmpeg command for extracting audio...\n\n";
 		ffmpegCommand = "ffmpeg -i " + videoFileRef + " -vn -ar 44100 -ac 2 -ab 192k -f mp3 " + audioFileRef;
 		//ffmpeg -i F:\\videos\\a.mp4 -vn -ar 44100 -ac 2 -ab 192k -f mp3 F:\\videos\\aa.mp3
 
@@ -42,6 +46,10 @@ bool IoController::generateAudio()
 		{
 			system(ffmpegCommand.c_str());
 			cout << "Audio file for " << obj.getOrigninalVideoName() << " is generated" << endl;
+			AudioController audioControllerObj;
+
+			//call for noise reduction function and remove background noise
+			audioControllerObj.noiseReduction(audioFileRef, path, originalVideoName);
 		}
 		catch (exception e)
 		{

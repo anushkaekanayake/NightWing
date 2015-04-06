@@ -11,7 +11,12 @@
 #include "CommonUtilities.h"
 
 
-//reduce the background noise 
+/**
+*reduce the background noises up to some extent.
+*@param:full file path to the extracted audio file
+*@param:path to the folder
+*@param:name of the original video file
+**/
 void AudioController::noiseReduction(string audioRef, string path, string originalVideoName)
 {
 	CommonUtilities commonUtilituesObj;
