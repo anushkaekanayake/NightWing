@@ -19,5 +19,5 @@ class AudioController
 	*@param:name of the original video file
 	*/
 	public:
-	void noiseReguction(string audioRef, string path, string originalVideoName);
+	void noiseReduction(string audioRef, string path, string originalVideoName);
 };

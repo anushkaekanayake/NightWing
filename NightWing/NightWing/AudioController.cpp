@@ -12,7 +12,7 @@
 
 
 //reduce the background noise 
-void AudioController::noiseReguction(string audioRef, string path, string originalVideoName)
+void AudioController::noiseReduction(string audioRef, string path, string originalVideoName)
 {
 	CommonUtilities commonUtilituesObj;
 	string nameModifire = "-normalized-audio";
