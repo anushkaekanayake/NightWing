@@ -9,8 +9,12 @@
 #include <iostream>
 #include "IoController.h"
 #include "SystemProperties.h"
+#include "core\core.hpp"
+#include "highgui\highgui.hpp"
+
 
 using namespace std;
+using namespace cv;
 
 int main()
 {
