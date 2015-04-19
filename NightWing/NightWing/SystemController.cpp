@@ -5,25 +5,52 @@
 */
 
 #include "stdafx.h"
-#include "SystemController.h"
 #include <iostream>
+/*#include "SystemController.h"
 #include "IoController.h"
-#include "SystemProperties.h"
-#include "core\core.hpp"
-#include "highgui\highgui.hpp"
+#include "SystemProperties.h"*/
+#include <tesseract\baseapi.h>
+#include <leptonica\allheaders.h>
 
 
-using namespace std;
-using namespace cv;
+
+
+
 
 int main()
 {
 
-	cout << "welcome" << endl;
+	std::cout << "welcome" << std::endl;
 
-	IoController ioCOntrollerObj;
+	/*IoController ioCOntrollerObj;
 
 	ioCOntrollerObj.generateAudio();
+
+*/
+	
+	const char* lang = "eng";
+	const char* filename = "Resources\\1.png";
+
+	tesseract::TessBaseAPI tess;
+	tess.Init(NULL, lang, tesseract::OEM_DEFAULT);
+	tess.SetPageSegMode(tesseract::PSM_SINGLE_BLOCK);
+
+	FILE* fin = fopen(filename, "rb");
+	if (fin == NULL)
+	{
+		std::cout << "Cannot open " << filename << std::endl;
+		return -1;
+	}
+	fclose(fin);
+
+	STRING text;
+	if (!tess.ProcessPages(filename, NULL, 0, &text))
+	{
+		std::cout << "Error during processing." << std::endl;
+		return -1;
+	}
+	else
+		std::cout << text.string() << std::endl;
 
 	//wait until press a key
 	system("Pause");

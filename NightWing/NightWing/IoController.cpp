@@ -67,7 +67,10 @@ bool IoController::generateAudio()
 
 
 //generate the final video file with filtered highlights
-bool IoController::generateVideo() {}
+bool IoController::generateVideo() {
+bool status=false;
+return status;
+}
 
 //********this should be removed
 void inputsFromUisimmulatorFunction()

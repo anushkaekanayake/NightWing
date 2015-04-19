@@ -19,7 +19,7 @@
 **/
 void AudioController::noiseReduction(string audioRef, string path, string originalVideoName)
 {
-	CommonUtilities commonUtilituesObj;
+	/*CommonUtilities commonUtilituesObj;
 	string nameModifire = "-normalized-audio";
 	string normalizedAudioRef = path + nameModifire + originalVideoName + ".mp3";
 	if (!commonUtilituesObj.fileExistenceChecker(normalizedAudioRef))
@@ -40,7 +40,7 @@ void AudioController::noiseReduction(string audioRef, string path, string origin
 	{
 		cout << audioRef << " file is already generated." << endl;
 	}
-
+	*/
 }
 
 

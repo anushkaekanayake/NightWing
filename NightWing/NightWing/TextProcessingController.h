@@ -4,10 +4,21 @@
 *author:nightwing
 *date:30/03/2015
 */
+#include <string>
+#include <iostream>
+#include <string>
+#include "core\core.hpp"
 
+using namespace std;
+using namespace cv;
 class TextProcessingController
 {
-	//process the text on the video(score card details and etc.)
+	//process the given raw data and generate information (score card data..etc.)
 	public:
-	void processText();
+	void processText(string rawData);
+
+	//uses to recognize the charcters on the given image frame and returs the extracted raw data
+	public:
+	string recognizeText();
+
 };
