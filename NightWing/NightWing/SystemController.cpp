@@ -16,10 +16,13 @@ int main()
 {
 
 	cout << "welcome" << endl;
-	
+
 	IoController ioCOntrollerObj;
-	
+
 	ioCOntrollerObj.generateAudio();
+
+	//wait until press a key
+	system("Pause");
 	return 0;
 }
 
