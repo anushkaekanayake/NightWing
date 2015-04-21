@@ -9,16 +9,17 @@
 #include <string>
 #include "core\core.hpp"
 
-using namespace std;
-using namespace cv;
 class TextProcessingController
 {
 	//process the given raw data and generate information (score card data..etc.)
 	public:
-	void processText(string rawData);
+	void processText(std::string rawData);
 
 	//uses to recognize the charcters on the given image frame and returs the extracted raw data
 	public:
-	string recognizeText();
+	std::string recognizeText(std::string imagePath);
+
+	private:
+	void noiseReducer(std::string imagePath);
 
 };

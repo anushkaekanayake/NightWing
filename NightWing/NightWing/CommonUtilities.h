@@ -14,6 +14,5 @@ class CommonUtilities
 		else                 // If the file was found, then file is non-0.
 			return true;     // The file was found.
 	}
-
 };
 

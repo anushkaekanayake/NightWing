@@ -54,6 +54,9 @@
     <ClInclude Include="CommonUtilities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NoiseRemover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -81,6 +84,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FilteringController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NoiseRemover.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
