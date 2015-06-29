@@ -17,15 +17,14 @@
 using namespace std;
 int main()
 {
-
-	std::cout << "welcome" << std::endl;
-
+	std::cout << "welcome to Automatic Cricket Highlight Generator.." << std::endl <<  std::endl;
+	std::cout << "Extracted data from image : " ;
 	IoController ioCOntrollerObj;
 
-	ioCOntrollerObj.generateAudio();
+	//ioCOntrollerObj.generateAudio();
 
 	TextProcessingController textProcessingControllerObj;
-	string returnedData = textProcessingControllerObj.recognizeText("F:\\project pront screens\\4.png");//Resources\\7.png
+	string returnedData = textProcessingControllerObj.recognizeText("F:\\project pront screens\\Sri Lanka vs India World T20 2014 Final\\Duplicate.png");//Resources\\7.png
 	textProcessingControllerObj.processText(returnedData);
 
 	
