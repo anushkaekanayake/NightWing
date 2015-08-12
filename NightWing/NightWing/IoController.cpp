@@ -11,9 +11,11 @@
 #include <algorithm>
 #include "CommonUtilities.h"
 #include "AudioController.h"
+#include <highgui.h>
 
 
 using namespace std;
+using namespace cv;
 
 string videoFileRef;
 string audioFileRef;
@@ -72,6 +74,9 @@ bool status=false;
 return status;
 }
 
+
+
+
 //********this should be removed
 void inputsFromUisimmulatorFunction()
 {
@@ -80,3 +85,4 @@ void inputsFromUisimmulatorFunction()
 	obj.setPath("F:\\videos\\");
 
 }
+

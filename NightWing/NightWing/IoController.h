@@ -3,7 +3,8 @@
 *author:nightwing
 *date:30/03/2015
 */
-
+#include <string>
+using namespace std;
 class IoController
 {
 	//extract the audio from the given video
@@ -13,5 +14,6 @@ class IoController
 	public:
 	bool generateVideo();
 
+	
 
 };
